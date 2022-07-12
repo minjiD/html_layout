@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout44</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #wrap {
+           border: 1px solid #ff0000;
+           margin: 0 auto;
+           width: 800px;
+           padding: 20px;
+           height: 630px;
+        }
+
+        .section_right {
+            width: 48%;
+            height: 150px;
+            background-color: rgb(152, 224, 252);
+            margin-bottom: 10px;
+            float: right;
+        }
+
+        .section_left {
+            width: 48%;
+            height: 150px;
+            background-color: rgb(152, 224, 252);
+            margin-bottom: 10px;
+        }
+
+        header, article { /* 동일한 조건 처리 */
+            width: 100%;
+            height: 150px;
+            background-color: rgb(209, 253, 200);
+            margin-bottom: 10px;
+        }
+
+        .footer_right {
+            width: 48%;
+            height: 150px;
+            background-color: rgb(152, 224, 252);
+            margin-bottom: 10px;
+            float: right;
+        }
+
+        .footer_left {
+            width: 48%;
+            height: 150px;
+            background-color: rgb(152, 224, 252);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="">
+            <header></header>
+
+            <section class="section_right"></section>
+
+            <section class="section_left"></section>
+
+            <article></article>
+
+            <footer class="footer_right"></footer>
+
+            <footer class="footer_left"></footer>
+        </div>
+    </div>
+</body>
+</html>

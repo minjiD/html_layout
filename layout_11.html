@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout11</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #wrap {
+           border: 1px solid #ff0000;
+           margin: 0 auto;
+           width: 800px;
+           padding: 20px;
+           height: 630px;
+        }
+
+        #left {
+            width: 600px;
+            float: left;
+        }
+
+        header, section, article { /* 동일한 조건 처리 */
+            width: 100%;
+            height: 150px;
+            background-color: rgb(209, 253, 200);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(209, 253, 200);
+        }
+
+        aside {
+            width: 180px;
+            height: 630px;
+            background-color: cadetblue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="left">
+            <header></header>
+
+            <section></section>
+
+            <article></article>
+
+            <footer></footer>
+        </div>
+
+        <aside></aside>
+    </div>
+</body>
+</html>
