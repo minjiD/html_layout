@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_sizing</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .box1 {
+            background-color: rgb(89, 199, 162);
+            border: 10px solid red;
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            background-color: rgb(89, 199, 162);
+            border: 10px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- div{box$}*2 + tab key -->
+    <!-- <div>box1</div>
+    <div>box2</div> -->
+
+    <!-- div.box$*2 + tab key -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

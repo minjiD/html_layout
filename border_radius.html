@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radius</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 2px solid #222;
+            display: inline-block;
+            margin: 20px;
+            background: #ffff00;
+        }
+
+        .round01 {
+            border-radius: 30px;
+        }
+
+        .round02 {
+            border-radius: 50px/30px; /* '/'는 x축 y축 */
+        }
+
+        .round03 {
+            border-bottom-right-radius: 50% 30%; /* 오른쪽 아래 */
+        }
+
+        .round04 {
+            border-top-left-radius: 30px;
+        }
+
+        .round05 {
+            border-bottom-left-radius: 30px;
+        }
+
+        .round06 {
+            /* border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px; */
+            border-radius: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.round$$*5 -->
+    <div class="round01"></div>
+    <div class="round02"></div>
+    <div class="round03"></div>
+    <div class="round04"></div>
+    <div class="round05"></div>
+    <div class="round06"></div>
+</body>
+</html>

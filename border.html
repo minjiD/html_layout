@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            /* border: 1px solid #ccc; */
+            display: inline-block; /* inline은 상/하 margin, padding 사용 불가 */
+            padding: 20px;
+            margin: 0 20px;
+        }
+
+        #style1 {
+            border: 5px dotted greenyellow;
+            box-shadow: 20px -5px 10px 5px lightblue;
+            /* box-shadow: x축 | y축 | 블러 | 퍼짐정도 | 색상 */
+        }
+
+        #style2 {
+            border: 5px dashed red;
+            box-shadow: 0px 10px 15px 2px lightcoral;
+        }
+
+        #style3 {
+            border: 5px green;
+            border-style: dashed dotted;
+            box-shadow: -15px 3px 27px 15px lawngreen;
+        }
+
+        #style4 {
+            border: 5px lightgreen;
+            border-style: dashed dotted none solid;
+            box-shadow: 0 0 10px 5px black inset; /* inset - 안쪽으로 들어가는 방향의 그림자*/
+        }
+
+        /* 테두리 두께 지정
+        border-width: 크기 | thin | medium | thick */
+    </style>
+</head>
+<body>
+    <!-- div>ul>li#style$*4 -->
+    <div>
+        <ul>
+            <li id="style1">0001</li>
+            <li id="style2">0002</li>
+            <li id="style3">0003</li>
+            <li id="style4">0004</li>
+        </ul>
+    </div>
+</body>
+</html>
