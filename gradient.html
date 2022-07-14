@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        div {
+            width: 400px;
+            height: 200px;
+            float: left;
+            margin: 0 20px 20px 0;
+            border: 1px solid;
+        }
+
+        .gra01 {
+            background: linear-gradient(yellow, rgb(25, 4,  101));
+        }
+
+        .gra02 {
+            background: linear-gradient(to top, yellow, rgb(25, 4,  101));
+        }
+
+        .gra03 {
+            background: linear-gradient(to right, yellow, rgb(25, 4,  101));
+        }
+        
+        .gra04 {
+            background: linear-gradient(45deg, yellow, rgb(25, 4,  101));
+        }
+
+        .gra05 {
+            background: radial-gradient(rgb(208, 250, 208), black);
+        }
+
+        .gra06 {
+            background: radial-gradient(circle, rgb(208, 250, 208), black, red, yellow);
+        }
+
+        .gra07 {
+            background: repeating-linear-gradient(135deg, yellow, yellow 20px, red 20px, red 40px);
+        }
+
+        .gra08 {
+            background: repeating-radial-gradient(circle, yellow, red 80px);
+        }
+
+        .gra09 {
+            /* background: repeating-radial-gradient(circle at right, blue, white 80px); */
+            background: repeating-radial-gradient(at right top, blue, white 80px);
+        }
+
+        .gra10 {
+            background: repeating-radial-gradient(circle at center top, blue, white 40px);
+        }
+
+        .gra11 {
+            background: linear-gradient(209deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+
+        .gra12 {
+            background: radial-gradient(circle at left top, rgba(63,94,251,1) 0%, rgba(101,89,222,1) 22%, rgba(144,84,189,1) 43%, rgba(186,79,157,1) 67%, rgba(252,70,107,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- div.gra$$*10 -->
+    <div class="gra01"></div>
+    <div class="gra02"></div>
+    <div class="gra03"></div>
+    <div class="gra04"></div>
+    <div class="gra05"></div>
+    <div class="gra06"></div>
+    <div class="gra07"></div>
+    <div class="gra08"></div>
+    <div class="gra09"></div>
+    <div class="gra10"></div>
+    <div class="gra11"></div>
+    <div class="gra12"></div>
+</body>
+</html>

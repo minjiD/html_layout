@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지크기</title>
+    <style>
+        #wrap {
+            width: 1100px;
+            margin: 50px auto; /* 상하 50px 떨어지고 가운데 정렬하겠다는 의미 */
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border: 1px solid red;
+            float: left; /* 옆으로 붙어진다. */
+            background: url(./images/bg4.jpg) no-repeat left top;
+        }
+
+        #bg1 {
+            /* 원래 배경이미지 크기로 표사 */
+            background-size: auto;
+        }
+
+        #bg2 {
+            background-size: 200px;
+        }
+
+        #bg3 {
+            /* 배경이미지 너비요소의 50%, 높이는 자동 계산 */
+            background-size: 50%;
+        }
+
+        #bg4 {
+            /* 배경이미지 너비와 높이 - 이때 주의사항 이미지 비율이깨질 수 있다 */
+            background-size: 100% 100%;
+        }
+
+        #bg5 {
+            background-size: contain;
+        }
+
+        #bg6 {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.box#bg$*6 -->
+    <div id="wrap">
+        <div class="box" id="bg1"></div>
+        <div class="box" id="bg2"></div>
+        <div class="box" id="bg3"></div>
+        <div class="box" id="bg4"></div>
+        <div class="box" id="bg5"></div>
+        <div class="box" id="bg6"></div>
+    </div>
+</body>
+</html>

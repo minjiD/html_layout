@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip</title>
+    <style>
+        .style {
+            width: 350px;
+            padding: 20px;
+            float: left;
+            margin-right: 20px;
+            border: 5px dotted #333;
+            background-color: rgb(199, 255, 236);
+        }
+
+        #clip1 {
+            background-clip: border-box; /* 기본 */
+        }
+
+        #clip2 {
+            background-clip: padding-box;
+        }
+
+        #clip3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.style#clip$*3 -->
+    <div id="wrap">
+        <div class="style" id="clip1">구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.</div>
+        <div class="style" id="clip2">구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.</div>
+        <div class="style" id="clip3">구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.구하지 군영과 그러므로 황금시대다. 바로 청춘이 스며들어 우리 천고에 않는 이상의 풍부하게 위하여서.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02</title>
+    <style>
+        table {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        th {
+            background-color: #ccc;
+            padding: 5px 30px;
+        }
+
+        td, th {
+            border : 1px solid black;
+            border-collapse : collapse;
+        }
+
+        .th_gray {
+            padding: 5px 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>속성</th> <!-- 제목 -->
+            <th>풀이</th>
+        </thead>
+        <tbody>
+            <tr> <!-- 줄 -->
+                <td class="th_gray">a:link</td> <!-- 내용 - 칸/셀 -->
+                <td>링크된 글자를 보고만 있을 때의 스타일을 주는 선택자.</td>
+            </tr>
+            <tr>
+                <td class="th_gray">a:visited</td>
+                <td>링크된 글자를 눌러 해당 페이지에 갔다가 돌아온 경우의 스타일을 주는 선택자.</td>
+            </tr>
+            <tr>
+                <td class="th_gray">a:hover</td>
+                <td>링크 걸린 글자에 마우스가 닿았을 경우의 스타일을 주는 선택자.</td>
+            </tr>
+            <tr>
+                <td class="th_gray">a:active</td>
+                <td>링크 걸린 글자가 활성화되었을 경우의 스타일을 주는 선택자.</td>
+            </tr>
+            <tr>
+                <td class="th_gray">a:focus</td>
+                <td>링크 걸린 글자에 포커스가 생길 경우의 스타일을 주는 선택자.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

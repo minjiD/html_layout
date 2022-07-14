@@ -7,8 +7,35 @@
     <title>LIST</title>
     <style>
         ul {
-            list-style-image: url("https://bit.ly/2GqYPc7");
+            /* list-style-image: url("https://bit.ly/2GqYPc7"); */
+            list-style: none;
+            margin-left: 20px;
         }
+
+        li {
+            background-image: url(./images/book-icon.png);
+            background-repeat: no-repeat;
+            line-height: 40px; /* 줄간격 */
+            background-position: left center;
+            padding-left: 50px;
+        }
+
+        #bear {
+            width: fit-content;
+            padding: 50px 30px;
+            border-radius: 20px;
+            background-color: aquamarine;
+            background-position: center;
+        }
+
+        #bg {
+            width: fit-content;
+            height: fit-content;
+            background-color: antiquewhite;
+            padding: 30px;
+            border-radius: 25px
+        }
+
     </style>
 </head>
 <body>
@@ -19,5 +46,18 @@
         <li>비행기</li>
         <li>없는배</li>
     </ul>
+
+    <div>
+        <div id="bear">
+            <img src="./images/bg1.jpg" alt="곰인형">
+        </div>
+    </div>
+
+    <div id="bg">
+        <div id="background">
+            <img src="./images/bg.jpg" alt="">
+            <p>You have to fight to reach your dream</p>
+        </div>
+    </div>
 </body>
 </html>

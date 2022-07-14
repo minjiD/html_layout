@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지 표시방법</title>
+    <style>
+        body {
+            background: url(./images/bg2.png) no-repeat right bottom fixed;
+            /* 배경이미지 삽입, 반복하지 않음, x축 위치, y축 위치, 고정 */
+        }
+
+        div {
+            width: 400px;
+            height: 250px;
+            border: 20px solid rgba(204, 204, 204, 0.5); /* alpha는 투명도 설정  값은 0 ~ 1 사이 */
+            padding: 20px;
+            margin-bottom: 20px;
+            background: url(./images/bg3.png) no-repeat right top;
+        }
+
+        #bg1 {
+            /* 패딩까지 배경이미지 표시 */
+            background-origin: padding-box;
+        }
+
+        #bg2 {
+            /* 테두리까지 배경이미지 표시 */
+            background-origin: border-box;
+        }
+
+        #bg3 {
+            /* 내용 영역만 배경이미지 표시 */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#bg$>h2+h3+p*3 => '+'는 형제라는 의미 -->
+    <div id="bg1">
+        <h2>연예시리즈</h2>
+        <h3>빠른 학습법</h3>
+        <p>쉬운 내용으로 알기쉬운 연예를 알려드립니다.</p>
+    </div>
+
+    <div id="bg2">
+        <h2>연예시리즈</h2>
+        <h3>빠른 학습법</h3>
+        <p>쉬운 내용으로 알기쉬운 연예를 알려드립니다.</p>
+    </div>
+
+    <div id="bg3">
+        <h2>연예시리즈</h2>
+        <h3>빠른 학습법</h3>
+        <p>쉬운 내용으로 알기쉬운 연예를 알려드립니다.</p>
+    </div>
+</body>
+</html>
