@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 15px 25px;
+            float: left;
+            border: 1px solid #333;
+        }
+
+        a:link {
+            color: #464646;
+            text-decoration: none;
+        }
+
+        li:hover {
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+
+        /* a:hover:visited {
+            color: white;
+        } */
+
+        li:hover a {
+            color: white;
+        }
+
+        /*#home {*/
+        li:nth-child(1) {
+            border-radius: 15px 0 0 15px;
+        }
+
+        /*#jquery {*/
+        li:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav>ul>li*4>a -->
+    <nav>
+        <ul>
+            <li id="home"><a href="#">HOME</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li id="jquery"><a href="#">JQuery</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

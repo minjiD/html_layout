@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            width: 250px;
+            height: 300px;
+            border: 1px solid #333;
+            position: absolute; /* div의 부모가 브라우저가 됨 */
+        }
+
+        #z01 {
+            background-color: red;
+            left: 50px;
+            top: 150px;
+        }
+
+        #z02 {
+            background-color: orange;
+            left: 100px;
+            top: 120px;
+        }
+
+        #z03 {
+            background-color: yellow;
+            left: 150px;
+            top: 90px;
+        }
+
+        #z04 {
+            background-color: green;
+            left: 200px;
+            top: 60px;
+            z-index: 3;
+        }
+
+        #z05 {
+            background-color: blue;
+            left: 250px;
+            top: 90px;
+            z-index: 2;
+        }
+
+        #z06 {
+            background-color: navy;
+            left: 300px;
+            top: 120px;
+            z-index: 1;
+        }
+        
+        #z07 {
+            background-color: purple;
+            left: 350px;
+            top: 150px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#z$$*7 -->
+    <div id="z01"></div>
+    <div id="z02"></div>
+    <div id="z03"></div>
+    <div id="z04"></div>
+    <div id="z05"></div>
+    <div id="z06"></div>
+    <div id="z07"></div>
+
+    <!-- 원하는 위치, 특정 영역에 불러올 수 있음, 영역이 필요함 -->
+    <!-- <iframe src="https://daum.net" width="800px" height="600px" frameborder="0"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QxgE7P76aEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
