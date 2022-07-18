@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오버튼 이미지 처리</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            color: #333;
+            margin: 50px;
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+
+        span {
+            margin: 0 15px;
+        }
+
+        /* radio button 변경 */
+        input[type=radio] {
+            display: none;
+        }
+
+        input[type=radio] + label { /* input과 label은 형제 */
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: url(./images/spr_join_n.png) no-repeat 0 0;
+            margin-bottom: -12px;
+            /* vertical-align: middle; */
+            cursor: pointer;
+        }
+
+        input[type=radio]:checked + label {
+            width: 28px;
+            height: 28px;
+            background: url(./images/spr_join_n.png) no-repeat -28px 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="radio" id="female"> <label for="female"></label> <span>여자</span>
+    <input type="radio" name="radio" id="male"> <label for="male"></label> <span>남자</span>
+    <input type="radio" name="radio" id="none" checked> <label for="none"></label> <span>선택안함</span>
+</body>
+</html>

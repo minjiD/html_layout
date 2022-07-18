@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>필수 정보</h1>
+        <label for="">이름</label><input type="text" maxlength="4" size="10" autofocus placeholder="이름을 입력하세요"> <br>
+        <label>회원등급</label><input type="text" size="10" readonly value="신입회원"> <br>
+        <label for="">아이디</label><input type="text" size="20" required placeholder="아이디를 입력하세요">
+        <button>중복확인</button> <br>
+        <label for="">비밀번호</label><input type="password" size="20" required placeholder="숫자 포함 10자 비밀번호"> <br>
+        <label for="">비밀번호 확인</label><input type="password" size="20" required placeholder="다시 한번 비밀번호 입력"> <br>
+        <label for="">휴대폰 번호</label>
+        <select name="" id="">
+            <option value="">선택</option>
+            <option value="">010</option>
+            <option value="">011</option>
+            <option value="">016</option>
+            <option value="">017</option>
+        </select>
+        - <input type="text" size="6">
+        - <input type="text" size="6">
+        <button>중복확인</button> <br>
+        <input type="checkbox">문자를 통한 상품, 홍보 및 이벤트 정보 수신에 동의(선택) <br>
+        <label for="">이메일</label>
+        <input type="text" size="10" required> @ <input type="text" size="10" required>
+        <select name="" id="">
+            <option value="">선택</option>
+            <option value="">naver.com</option>
+            <option value="">google.com</option>
+        </select>
+        <button>중복확인</button> <br>
+        <input type="checkbox">이메일을 통한 상품, 홍보 및 이벤트 정보 수신에 동의(선택) <br>
+
+        <h1 for="">선택 정보</h1>
+        <label for="">자택</label> <br>
+        <label for="">주소</label><input type="text" size="10">
+        <button>우편번호검색</button><input type="text" size="20"> <br>
+        <input type="text" size="30" placeholder="상세주소"> <br>
+        <label for="">전화번호</label>
+        <select name="" id="">
+            <option value="">선택</option>
+            <option value="">031</option>
+            <option value="">035</option>
+            <option value="">02</option>
+            <option value="">042</option>
+        </select>
+        - <input type="text" size="6">
+        - <input type="text" size="6"> <br>
+        <label for="">직정</label> <br>
+        <label for="">주소</label><input type="text" size="10">
+        <button>우편번호검색</button><input type="text" size="20"> <br>
+        <input type="text" size="30" placeholder="상세주소"> <br>
+        <label for="">전화번호</label>
+        <select name="" id="">
+            <option value="">선택</option>
+            <option value="">031</option>
+            <option value="">035</option>
+            <option value="">02</option>
+            <option value="">042</option>
+        </select>
+        - <input type="text" size="6">
+        - <input type="text" size="6"> <br>
+        <label for="">생년월일</label>
+        <input type="date">
+        <input type="radio" name="date">양력
+        <input type="radio" name="date">음력 <br>
+        <input type="reset" value="취소">
+        <button type="submit">확인</button>
+    </form>
+
+    <!-- 
+        새로운 속성
+        - autofocus : 입력 커서 표시(1군데만 적용)
+        - placeholder : 내용 힌트 표시
+        - required : 필수사항 입력(미 입력 시 경고창)
+        - autocomplete : 자동완성 기능 제어(on-사용, off-비사용)
+    -->
+</body>
+</html>
