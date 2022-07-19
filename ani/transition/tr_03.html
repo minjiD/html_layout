@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #warp {
+            margin: 50px auto;
+            width: 800px;
+        }
+
+        #wrap div { /* #wrap의 하위 div */
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            background: #007396;
+            float: left;
+            margin: 5px 10px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #wrap:hover div {
+            height: 400px;
+        }
+
+        .ease1 {
+            /* 시작 천천히 점점 빨라 졌다가 끝도 천천히 */
+            transition: 3s ease;
+        }
+
+        .ease2 {
+            /* 시작부터 끝까지 같은 속도 */
+            transition: 3s linear;
+        }
+
+        .ease3 {
+            /* 느리게 시작 */
+            transition: 3s ease-in;
+        }
+
+        .ease4 {
+            /* 느리게 끝 */
+            transition: 3s ease-out;
+        }
+
+        .ease5 {
+            /* 느리게 시작 느리게 끝 */
+            transition: 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.ease$*5 -->
+    <div id="wrap">
+        <div class="ease1">ease</div>
+        <div class="ease2">linear</div>
+        <div class="ease3">ease-in</div>
+        <div class="ease4">ease-out</div>
+        <div class="ease5">ease-in-out</div>
+    </div>
+</body>
+</html>

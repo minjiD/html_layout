@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연속 애니메이션 2</title>
+    <style>
+        #wrap {
+            width: 151px;
+            margin: 100px auto;
+        }
+
+        #circle {
+            width: 151px;
+            height: 151px;
+            background: url(./rainbow_ball.png) no-repeat 0 0;
+            animation: cir 4s steps(6) infinite;
+        }
+
+        @keyframes cir {
+            from {
+                background-position: 0 0;
+            }
+            
+            to {
+                background-position: -906px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div#circle -->
+    <div id="wrap">
+        <div id="circle"></div>
+    </div>
+</body>
+</html>

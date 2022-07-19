@@ -11,19 +11,38 @@
       margin:0;
       padding:0;
      }
-      .prod-list li {
-        position: relative;
-        float: left;
-        padding: 0;
-        margin: 10px;
-        overflow: hidden;
-      }
+    .prod-list li {
+      position: relative; /*어딘가에 position: absolute;가 있어야 함*/
+      float: left;
+      padding: 0;
+      margin: 10px;
+      overflow: hidden;
+    }
     .prod-list img {
       margin:0;
       padding:0;
       float:left;
       z-index:5;
-    }   
+    }
+
+    .prod-list .caption {
+      position:absolute; /*위치값을 잘 잡아줘야 함 - 위치 지정 필요*/
+      background: rgba(0,0,0,0.4);
+      z-index:100; /*혹시 안보일 수 있어서 값을 많이 줌*/
+      width:300px;
+      height:260px;
+      text-align: center;
+      color: white;
+      padding-top: 15px;
+      transition: all 300ms linear;
+      bottom: -350px; /* or top: 200px; */
+    }
+
+    /* 이미지는 공간이 아니라 안됨 */
+    li:hover .caption { /* 각각의 공간에 나오도록 하기 위해 li를 사용 */
+      transform: translateY(-100%);
+    }
+    
   </style>
 </head>
 <body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #ex {
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            padding: 20px;
+        }
+
+        #ex:hover .box {
+            /* 전체 영역에 마우스가 올라오면 .box가 조건에 맞게 동작하도록 */
+            transform: rotate(720deg);
+            margin-left: 420px;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            background: yellow;
+            margin-bottom: 10px;
+        }
+
+        #no-delay {
+            border: 1px solid red;
+            transition-duration: 3s;
+        }
+
+        #delay {
+            border: 1px solid rgb(91, 53, 230);
+            transition-duration: 3s;
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#ex>(div#delay.box>p)*2 -->
+    <div id="ex">
+        <div id="no-delay" class="box">
+            <p>no-delay</p>
+        </div>
+        <div id="delay" class="box">
+            <p>delay</p>
+        </div>
+    </div>
+</body>
+</html>

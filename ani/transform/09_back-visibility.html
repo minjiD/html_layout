@@ -3,6 +3,33 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Transform</title>
+		<style>
+			div {
+				width: 200px;
+				height: 200px;
+			}
+
+			.container {
+				border: 1px solid black;
+				margin: 100px 0 0 100px;
+				float: left;
+				perspective: 300px; /* 원근감 부여 */
+			}
+
+			.box {
+				background: #82cdb8;
+				transform: rotateY(130deg);
+			}
+
+			#back1 {
+				backface-visibility: hidden;
+			}
+
+			#back2 {
+				backface-visibility: visible;
+				/* 오브젝트 뒷면을 보일 것인지 여부 */
+			}
+		</style>
    	</head>
 	<body>		
 		<div class="container">

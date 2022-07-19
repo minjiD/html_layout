@@ -19,6 +19,10 @@
   .box .photo {
     position:absolute;
     left:0;
+    transition: all 300ms linear;/* 어떠한 효과를 줄 건지 */
+  }
+  .box:hover .photo { /* box에 마우스가 올라가면 photo를 변경하겠다 */
+    transform: translateX(-10%);
   }
   .box .caption {
     position:absolute;
@@ -28,12 +32,12 @@
     width:200px;
     height:300px;
     /* left:0; */
-    left:-250px; /* 위치 값 */
+    left:350px; /* 위치 값 */
     padding:20px;
     transition: all 300ms linear;/* 어떠한 효과를 줄 건지 */
   }
   .box:hover .caption { /* box에 마우스가 올라가면 caption을 변경하겠다 */
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   .box .caption p {
     position:absolute;

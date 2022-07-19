@@ -3,6 +3,38 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Transform</title>
+		<style>
+			div {
+				width: 200px;
+				height: 200px;
+			}
+
+			.container {
+				border: 1px solid black;
+				margin: 100px 0 0 100px;
+				float: left;
+				perspective: 300px; /* 원근감 부여 */
+			}
+
+			.box1 {
+				background: #893352;
+				transform: rotateY(45deg);
+			}
+
+			.box2 {
+				background: #214552;
+				transform: rotateX(45deg);
+				transform-origin: left top;
+			}
+
+			#tr-style1 {
+				transform-style: flat;
+			}
+
+			#tr-style2 {
+				transform-style: preserve-3d;
+			}
+		</style>
  	</head>
 	<body>		
 		<div class="container">

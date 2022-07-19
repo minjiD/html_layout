@@ -4,7 +4,7 @@
 body {
 	font-family: "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
 	font-size: 9pt;
-	line-height:160%
+	line-height:160%;
 	color: #000;
 	padding:0px;
 	margin:0px;	
@@ -187,9 +187,16 @@ a:hover {
 	height: 280px;
 	position: absolute;
 	overflow: hidden;
-	top: 0;
+	/* top: 0; */
 	left: 0;
 	background-color: rgba(255, 255, 255, 0.7);
 	top: 260px;
+	transition: all 0.3s ease-out 0.1s;
 }
+
+.item:hover .mask {
+	/* transform: translateY(-50%); */
+	top: 140px;
+}
+
 
