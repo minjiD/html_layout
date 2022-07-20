@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단위</title>
+    <style>
+       html { /* 기준 */
+        font-size: 16px;
+       }
+
+       article {
+        font-size: 20px;
+       }
+
+       h1 {
+        font-size: 3em;
+       }
+
+       p {
+        font-size: 1em;
+       }
+
+       a {
+        font-size: 0.8em;;
+       }
+       /* 
+       - px : 픽셀단위로 절대값으로 처리
+       - em : 바로 위 부모 요소를 기준으로 크기 설정하는 상대값
+       - rem : 최상위 부모요소인 html태그를 기준으로 크기 설정하는 상대값(많이 사용)
+       */
+       section {
+        width: 500px;
+        margin-bottom: 20px;
+       }
+
+       .style1 {
+        line-height: 30px;
+       }
+
+       .style2 {
+        line-height: 1.5rem;
+       }
+    </style>
+</head>
+<body>
+    <!-- article>h1{Title}+p{Lorem ipsum}+a{view} -->
+    <article>
+        <h1>Title</h1>
+        <p>Lorem ipsum</p>
+        <a href="#">view</a>
+    </article>
+
+    <!-- section.style$*2 -->
+    <section class="style1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat venenatis suscipit. Ut volutpat congue augue, vel ultrices odio rhoncus eleifend. Proin elementum elit eget ante tempus, quis varius dui dignissim. Quisque eu fringilla mauris. Suspendisse non nulla molestie, fringilla nulla ultrices, aliquet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius est nec accumsan bibendum.</section>
+    <section class="style2">Duis fringilla nisi sed magna tincidunt fermentum. Phasellus ut purus metus. Pellentesque elementum dolor sit amet ornare commodo. Vestibulum pellentesque ante sem, ut mollis lectus dictum non. Sed at velit metus. Fusce vestibulum placerat mi, vel elementum dolor imperdiet in. Phasellus suscipit in lectus at ultrices. Vestibulum vel tellus vehicula, aliquet augue sit amet, facilisis tortor. Suspendisse vehicula nunc eget augue faucibus, eu rhoncus ante volutpat. Aliquam maximus ut nibh ut porttitor. In iaculis blandit erat nec facilisis. Praesent posuere mattis ante, blandit efficitur arcu congue et.</section>
+</body>
+</html>

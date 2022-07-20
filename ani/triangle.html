@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼각형그리기</title>
+    <style>
+        div {
+            margin: 30px;
+            float: left;
+            width: 100px;
+            height: 100px;
+            outline: 1px solid black;
+        }
+
+        .tri1 {
+            border-top: 100px solid red;
+            border-right: 100px solid pink;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid blue;
+        }
+
+        .tri2 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid red;
+            border-right: 100px solid pink;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid blue;
+        }
+
+        .tri3 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid transparent; /* transparent - 투명도 */
+            border-right: 100px solid pink;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid blue;
+        }
+
+        .tri4 {
+            width: 0;
+            height: 0;
+            /* border-top: 100px solid transparent; */
+            border-right: 100px solid pink;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid blue;
+        }
+
+        .tri5 {
+            width: 0;
+            height: 0;
+            /* border-top: 100px solid transparent; */
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid transparent;
+        }
+
+        .tri6 {
+            width: 0;
+            height: 0;
+            border-top: 100px solid transparent; /* transparent - 투명도 */
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid yellow;
+            border-left: 100px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.tri$*5 -->
+    <div class="tri1"></div>
+    <div class="tri2"></div>
+    <div class="tri3"></div>
+    <div class="tri4"></div>
+    <div class="tri5"></div>
+    <div class="tri6"></div>
+</body>
+</html>
