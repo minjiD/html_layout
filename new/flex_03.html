@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스</title>
+    <style>
+        .wrap {
+            /* width: 700px; */
+            background: #a0a0a0;
+            border: 1px solid #333;
+            margin-bottom: 30px;
+            display: flex; /* 플랙스 영역 지정 */
+        }
+
+        .box {
+            /* width: 80px; */
+            margin: 5px;
+            padding: 5px 40px;
+            background: yellow;
+        }
+
+        #opt1 {
+            justify-content: flex-start; /* 기본값 - 주축의 시작점을 기준으로 배치 */
+        }
+
+        #opt2 {
+            justify-content: flex-end; /* 주축 끝점을 기준으로 배치 */
+        }
+
+        #opt3 {
+            justify-content: center; /* 주축 중앙 기준으로 배치 */
+            
+        }
+
+        #opt4 {
+            justify-content: space-between; /* 주축 시작점과 끝점 배치 후 같은 간격으로 배치 */
+        }
+
+        #opt5 {
+            justify-content: space-around; /* 전체 항목을 같은 간격으로 배치 */
+        }
+    </style>
+</head>
+<body>
+    <!-- div#opt.wrap>(div.box>p{$})*3 -->
+    <div id="opt1" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div id="opt2" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div id="opt3" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div id="opt4" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+
+    <div id="opt5" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+</body>
+</html>
