@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드라인</title>
+    <style>
+        #wrap {
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+
+        .box {
+            padding: 15px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .box1 {
+            background: #eee;
+            grid-column: 1/4;
+        }
+
+        .box2 {
+            background: #2e2e2e;
+            grid-row: 2/4;
+            grid-column-start: 1;
+        }
+
+        .box3 {
+            background: #e2e2e2;
+            grid-column: 2/4;
+            grid-column-start: 2;
+        }
+
+        .box4 {
+            background: #bbb;
+            /* grid-column: 3/4; */
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.box.box${box$}*4 -->
+    <div id="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>

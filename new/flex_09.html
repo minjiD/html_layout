@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스 예제</title>
+    <style>
+        body {
+            display: flex;
+            /* background: url(../images/bg5.jpg) no-repeat center fixed; */
+            background: url(../images/bg5.jpg) no-repeat left top fixed;
+            background-size: cover; /* 백그라운드가 브라우저 전체 크기에 맞도록 */
+            justify-content: center; /* 정렬 */
+            align-items: center; /* 정렬 */
+            min-height: 85vh; /* 버튼이 위치할 전체의 (최소)높이값을 줘야함 */
+        }
+
+        #btnSub {
+            width: 80px;
+            height: 60px;
+            border-radius: 7px;
+            font-size: 17px;
+            border: none; /* 그림자 스타일 주었을 때 생기는 border를 없애줌 */
+            box-shadow: 1px 1px 2px #fff; /* 버튼에 그림자 스타일 줌 */
+        }
+    </style>
+</head>
+<body>
+    <button id="btnSub" type="submit">클릭!</button>
+</body>
+</html>

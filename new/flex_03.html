@@ -39,7 +39,12 @@
         }
 
         #opt5 {
-            justify-content: space-around; /* 전체 항목을 같은 간격으로 배치 */
+            justify-content: space-around; /* 자식요소들의 여백을 균일하게 배분해서 정렬 */
+        }
+
+        #opt6 {
+            align-items: center;
+            justify-content: space-evenly; /* 자식요소들의 여백을 양끝까지 균일하게 배분해서 정렬 */
         }
     </style>
 </head>
@@ -100,6 +105,24 @@
     </div>
 
     <div id="opt5" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+
+    <div id="opt6" class="wrap">
         <div class="box">
             <p>1</p>
         </div>

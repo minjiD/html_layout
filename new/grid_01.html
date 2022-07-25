@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 그리드</title>
+    <style>
+        #wrap {
+            display: grid; /* 그리드 지정 */
+            grid-template-columns: /*300px 300px 300px*/ repeat(3, 1fr); /* 균등한 너비가 같은 칼럼 3개 */
+            grid-template-rows: /*200px*/ minmax(150px, auto); /* 줄높이 최소 150px, 최대 auto */
+        }
+
+        .item {
+            padding: 10px;
+            background: #eee;
+        }
+
+        .item:nth-child(odd) { /* 홀수에 있는 색 변경 */
+            background: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.item*5 -->
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis tempus dictum. Ut tempus blandit fermentum. Vestibulum at fermentum nisl, id ullamcorper mi. Suspendisse vitae porta nunc, et laoreet mauris.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis tempus dictum. Ut tempus blandit fermentum. Vestibulum at fermentum nisl, id ullamcorper mi. Suspendisse vitae porta nunc, et laoreet mauris.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis tempus dictum. Ut tempus blandit fermentum. Vestibulum at fermentum nisl, id ullamcorper mi. Suspendisse vitae porta nunc, et laoreet mauris.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis tempus dictum. Ut tempus blandit fermentum. Vestibulum at fermentum nisl, id ullamcorper mi. Suspendisse vitae porta nunc, et laoreet mauris.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis tempus dictum. Ut tempus blandit fermentum. Vestibulum at fermentum nisl, id ullamcorper mi. Suspendisse vitae porta nunc, et laoreet mauris.</div>
+    </div>
+</body>
+</html>

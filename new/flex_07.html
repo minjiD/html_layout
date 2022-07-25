@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소의 안쪽 여백 확대하기</title>
+    <style>
+        #wrap {
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+        
+        article {
+            /* width: 100px;
+            height: 100px; */
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            /* justify-content: center; 정렬
+            align-items: center; 정렬 */
+            border: 1px solid #2e2e2e;
+            box-sizing: border-box;
+        }
+
+        article:nth-of-type(1) {
+            flex-grow: 1; /* 부모영역의 크기를 똑같이 배분하고 안쪽 여백을 설정 (숫자가 크면 안쪽 여백이 더 크다) */
+        }
+
+        article:nth-of-type(2) {
+            flex-grow: 2;
+        }
+
+        article:nth-of-type(3) {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>article*3 -->
+    <div id="wrap">
+        <article>FLEX GROW 1</article>
+        <article>FLEX GROW 2</article>
+        <article>FLEX GROW 3</article>
+    </div>
+</body>
+</html>

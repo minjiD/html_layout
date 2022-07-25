@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소의 안쪽 여백 감소(축소)하기</title>
+    <style>
+        #wrap {
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+        
+        article {
+            width: 1000px; /* flex-shrink는 전체 너비에 영향을 받는다 */
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            border: 1px solid #2e2e2e;
+            box-sizing: border-box;
+        }
+
+        article:nth-of-type(1) {
+            flex-shrink: 1; /* 자식 요소의 크기를 줄였을 때 안쪽 여백의 감소 비율 지정(숫자가 크면 작아진다.) */
+        }
+
+        article:nth-of-type(2) {
+            flex-shrink: 2;
+        }
+
+        article:nth-of-type(3) {
+            flex-shrink: 3;
+        }
+
+        /* 
+        전체 너비값의 비율 조절할 때 사용
+        article:nth-of-type(1) {
+            flex: 1;
+        }
+
+        article:nth-of-type(2) {
+            flex: 2;
+        }
+
+        article:nth-of-type(3) {
+            flex: 3;
+        } */
+    </style>
+</head>
+<body>
+    <!-- div#wrap>article*3 -->
+    <div id="wrap">
+        <article>FLEX GROW 1</article>
+        <article>FLEX GROW 2</article>
+        <article>FLEX GROW 3</article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 레이아웃</title>
+    <style>
+        #wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* 화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시 */
+            margin-bottom: 50px;
+        }
+
+        .item {
+            padding: 15px;
+            background: #eee;
+        }
+
+        .item:nth-child(odd) {
+            background: #bbb;
+        }
+
+        #wrap2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            /* 칼럼 최소 너비만큼 채워서 표시 현재는 최소 100px */
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.item*6 -->
+    <h1>auto-fit 사용할 때</h1>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+
+    <h1>auto-fill 사용할 때</h1>
+    <div id="wrap2">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+</body>
+</html>

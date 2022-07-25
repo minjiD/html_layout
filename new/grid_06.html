@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드라인 예제</title>
+    <style>
+        #wrap {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr); /* fr - fraction 상대값 */
+            grid-template-rows: 100px 150px 150px 100px;
+        }
+
+        .box {
+            padding: 15px;
+            color: #fff;
+            font-weight: bold;
+            /* text-align: center; */
+            margin: 3px;
+        }
+
+        .box1 {
+            background: #eee;
+            grid-column: 1/12;
+        }
+
+        .box2 {
+            background: #2e2e2e;
+            grid-row: 2/4;
+        }
+
+        .box3 {
+            background: #e2e2e2;
+            grid-column: 2/11;
+            grid-row-start: 2;
+        }
+
+        .box4 {
+            background: #bbb;
+            grid-column: 2/11;
+            grid-row-start: 3;
+        }
+
+        .box5 {
+            background: #666;
+            grid-row: 2/4;
+        }
+
+        .box6 {
+            background: #999;
+            grid-column: 2/11;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>div.box.box${box$}*4 -->
+    <div id="wrap">
+        <div class="box box1">header</div>
+        <div class="box box2">leftCol</div>
+        <div class="box box3">midtop</div>
+        <div class="box box4">midBottom</div>
+        <div class="box box5">RightCol</div>
+        <div class="box box6">footer</div>
+    </div>
+</body>
+</html>

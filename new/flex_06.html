@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식요소 순서 지정하기</title>
+    <style>
+        #wrap {
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+        
+        article {
+            width: 100px;
+            height: 100px;
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            justify-content: center; /* 정렬 */
+            align-items: center; /* 정렬 */
+            border: 1px solid #2e2e2e;
+        }
+
+        article:nth-of-type(1) {
+            order: 2; /* 순서 변경 */
+        }
+
+        article:nth-of-type(2) {
+            order: 3; /* 요소의 순서를 지정할 때 사용(주의사항 - 자식요소에 전체 줘야함.) */
+        }
+
+        article:nth-of-type(3) {
+            order: 1;
+        }
+
+        article:nth-of-type(4) {
+            order: 5;
+        }
+
+        article:nth-of-type(5) {
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#wrap>article*3 -->
+    <div id="wrap">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+    </div>
+</body>
+</html>
